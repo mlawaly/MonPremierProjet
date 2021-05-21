@@ -41,7 +41,7 @@ object HelloWorld {
     maliste.foreach(f =>println(f.toUpperCase))
 
     val masequence : Seq[String] = Seq("Boukari", "Kone", "Issa", "Yao", "Saa", "Ilboudo", "Mariam")
-    val nbreSeq = masequence.map(f => f.length)
+    val nbreSeq = masequence.map(f => f)
     nbreSeq.foreach(f => println(f))
     val maseq = masequence.filter(_.length > 3)
     maseq.foreach(f => println(f))
@@ -54,6 +54,6 @@ object HelloWorld {
     val maCom = monMap.toList
     maCom.foreach(l => print(l))
 
-    val montableau : Array[String] = Array("Syllah", "Mamane")
+
   }
 }
